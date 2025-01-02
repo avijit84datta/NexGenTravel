@@ -1,0 +1,38 @@
+/* DestinationList.css */
+.destination-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.destination-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+    .destination-item:hover {
+        transform: translateY(-5px);
+    }
+
+.destination-name {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.destination-country {
+    font-size: 1rem;
+    color: #666;
+}
+
+.destination-description {
+    font-size: 0.9rem;
+    color: #999;
+    margin-top: 10px;
+}
