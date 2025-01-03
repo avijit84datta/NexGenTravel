@@ -1,10 +1,11 @@
 import { defineConfig } from 'vite';
-import plugin from '@vitejs/plugin-react';
+import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-    plugins: [plugin()],
-    server: {
-        port: 53440,
-    }
-})
+    plugins: [react()],
+    build: {
+        target: 'esnext', // Ensure modern browsers compatibility
+        outDir: 'dist',
+        cssCodeSplit: true, // Enable CSS code splitting
+    },
+});
