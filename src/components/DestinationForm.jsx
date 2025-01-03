@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from '../DestinationForm.css';
+import '../DestinationForm.css';
 
 const DestinationForm = ({ mode, initialData, onSubmit, onClose }) => {
     console.log('DestinationForm rendering!');
